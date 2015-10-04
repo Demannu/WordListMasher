@@ -5,20 +5,13 @@ parser = argparse.ArgumentParser(description='Combines wordlists to form more co
 parser.add_argument("wordlist1", help="First wordlist input path")
 parser.add_argument("wordlist2", help="Second wordlist input path")
 parser.add_argument("destination", help="Output file destination")
-parser.add_argument("-n", "--number", help="Enable number generation after mutation", type=int)
+parser.add_argument("-n", "--number", help="Set upper maximum of number generation range", type=int)
 args = parser.parse_args()
 
 # Set Variables
 word1 = args.wordlist1
 word2 = args.wordlist2 
 dest = args.destination
-
-# Banner Setup
-print ("##################################")
-print ("#      Python WordList Masher    #")
-print ("#         Author: Demannu        #")
-print ("# Github: Demannu/WordListMasher #")
-print ("##################################")
 
 # Perform File Actions
 wordList1 = open(word1, 'r')
