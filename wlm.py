@@ -41,8 +41,8 @@ for line in wordList1:
 	for line2 in wordList2:
 		line2 = line2.rstrip() 
 		wordListMerge.write(line + line2 + "\n")
-		wordList2 = open("wordlist2.lst")
-	wordList1 = open("wordlist1.lst")
+		wordList2 = open("wordList2")
+	wordList1 = open("wordList1")
 print("[INFO] Completed L1 + L2 Merge")
 
 print("[INFO] Starting List2 + List1 Merge")
@@ -51,8 +51,8 @@ for line in wordList2:
 	for line2 in wordList1:
 		line2 = line2.rstrip() 
 		wordListMerge.write(line + line2 + "\n")
-		wordList1 = open("wordlist1.lst")
-	wordList2 = open("wordlist2.lst")
+		wordList1 = open("wordList1")
+	wordList2 = open("wordList2")
 print("[INFO] Completed L2 + L1 Merge")
 
 if args.number:
